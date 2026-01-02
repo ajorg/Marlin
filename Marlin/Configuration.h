@@ -63,7 +63,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(C4rlos_E, Ender-5 Pro)" // Original author or contributor.
+#define STRING_CONFIG_H_AUTHOR "(ajorg, Ender-5 Pro)" // Original author or contributor.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 // @section machine
@@ -1302,7 +1302,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 139 }
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
@@ -1412,7 +1412,7 @@
  * The probe replaces the Z-MIN endstop and is used for Z homing.
  * (Automatically enables USE_PROBE_FOR_Z_HOMING.)
  */
-//#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
 // Force the use of the probe for Z-axis homing
 #define USE_PROBE_FOR_Z_HOMING
@@ -1661,7 +1661,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -44, -7, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -48, -10, -2.91 }
 
 // Enable and set to use a specific tool for probing. Disable to allow any tool.
 #define PROBING_TOOL 0
